@@ -6,10 +6,14 @@ class box(object):
 	def drew_out(self):
 		main_screen.blit(self.sq, self.rec)
 	
-#	pygame.init()
-#	main_screen = pygame.display.set_mode((600, 600))
-#	main_screen.fill((255, 252, 195))
-#	x = box(150, 150, 100, 100, 0, 0, 0)
-#	x.drew_out()
+		
+import pygame
+
+if __name__=="__main__":
+	pygame.init()
+	main_screen = pygame.display.set_mode((600, 600))
+	main_screen.fill((255, 252, 195))
+	x = box(150, 150, 100, 100, 0, 0, 0)
+	x.drew_out()
 	
 
