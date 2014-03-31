@@ -5,8 +5,10 @@ class Box(object):
 		self.rec = pygame.Rect(lo_x, lo_y, si_x, si_y)
 		self.sq = pygame.Surface([si_x, si_y])
 		self.sq.fill((r, g, b))
-	
-	def drew_out(self):
-		main_screen.blit(self.sq, self.rec)
-	
 
+	def draw(self, pos):
+		pos.blit(self.sq, self.rec)
+	
+	def drawimg(self, image_name):
+		image = pygame.image.load(image_name)
+		main_screen.blit(image, self.rec)
