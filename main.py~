@@ -26,11 +26,14 @@ if __name__=="__main__":
 
 				two = Box.Box(170, 150, 100, 100, 64, 224, 208)				
 				Box.Box.draw(two, main_screen)
-				two.drawimg("5_single_cupcake_crop.jpg", main_screen)
+				two.drawimg("Frostings/5_single_cupcake_crop.jpg", main_screen)
 
 				Box.Box.draw(two, main_screen)
+
 				three = Box.Box(302.5, 150, 100, 100, 64, 224, 208)
 				Box.Box.draw(three, main_screen)
+				three.drawimg("Frostings/frosting1.jpg", main_screen)
+
 				four = Box.Box(37.5, 337.5, 100, 100, 64, 224, 208)
 				Box.Box.draw(four, main_screen)
 				five = Box.Box(170, 337.5, 100, 100, 64, 224, 208)
@@ -38,7 +41,17 @@ if __name__=="__main__":
 				six = Box.Box(302.5, 337.5, 100, 100, 64, 224, 208)
 				Box.Box.draw(six, main_screen)
 			if one.rec.collidepoint(x,y):
-				print "hi"
+				print "hi1"
+			if two.rec.collidepoint(x,y):
+				print "hi2"
+	`		if three.rec.collidepoint(x,y):
+				print "hi3"
+			if four.rec.collidepoint(x,y):
+				print "hi4"
+			if five.rec.collidepoint(x,y):
+				print "hi5"
+			if six.rec.collidepoint(x,y):
+				print "hi6"
 		
 		pygame.display.flip()
 
